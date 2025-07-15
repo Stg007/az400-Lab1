@@ -1,0 +1,14 @@
+name: Hello World Self-Hosted
+on:
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
+
+jobs:
+  hello-world:
+    runs-on: ['self-hosted', 'Windows', 'X64']
+    # For more specificity, you could use:
+    # runs-on: [self-hosted, windows, windows-11]
+    
+    steps:
+      - name: Print greeting
+        run: echo "Hello World from my Windows 11 machine!"
+        shell: cmd  # Explicitly use Windows Command Prompt
