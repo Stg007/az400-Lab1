@@ -12,3 +12,11 @@ jobs:
       - name: Print greeting
         run: echo "Hello World from my Windows 11 machine!"
         shell: cmd  # Explicitly use Windows Command Prompt
+
+      - name: call action from marketplace
+        uses: devopsenggineer/hello-world-docker-action@v2.9
+        with:
+          # Welcome to hyderabad
+          who-to-greet: 'Taha'
+
+      
