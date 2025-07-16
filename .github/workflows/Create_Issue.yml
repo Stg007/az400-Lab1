@@ -16,6 +16,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - run: gh issue create --title "Taha" --body "Hola"
         env:
