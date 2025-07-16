@@ -12,5 +12,8 @@ jobs:
       - name: Print greeting
         run: echo "Hello World from my Windows 11 machine!"
         shell: cmd  # Explicitly use Windows Command Prompt
+        
+      - name: call local action
+        uses: ./.github/actions/Action 1
 
       
