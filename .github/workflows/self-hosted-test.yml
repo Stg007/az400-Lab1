@@ -14,6 +14,6 @@ jobs:
         shell: cmd  # Explicitly use Windows Command Prompt
         
       - name: call local action
-        uses: ./.github/actions/Action 1
+        uses: Stg007/az400-Lab1@Action 1
 
       
