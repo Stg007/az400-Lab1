@@ -13,7 +13,4 @@ jobs:
         run: echo "Hello World from my Windows 11 machine!"
         shell: cmd  # Explicitly use Windows Command Prompt
 
-      - name: call action from marketplace
-        uses: rajbos/actions-testing@v0.0.1
-
       
